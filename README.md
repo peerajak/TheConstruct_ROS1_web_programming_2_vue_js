@@ -110,3 +110,91 @@ Terminal 4
 rosbridge_address
 webpage_address
 ```
+
+## Unit 09
+
+Terminal 1
+
+```
+cd ~/webpage_ws/unit_09
+python -m SimpleHTTPServer 7000
+```
+
+Terminal 2
+
+```
+roslaunch course_web_dev_ros web.launch
+```
+
+Terminal 3
+
+```
+rosrun course_web_dev_ros robot_params.py
+```
+
+Terminal 4
+
+```
+rosbridge_address
+webpage_address
+```
+
+
+## Unit_10
+
+Terminal 1
+
+```
+cd ~/webpage_ws/unit_10
+python -m SimpleHTTPServer 7000
+```
+
+Terminal 2
+
+```
+roslaunch course_web_dev_ros web.launch
+```
+
+Terminal 3
+
+```
+roslaunch course_web_dev_ros tf2_web.launch
+```
+
+Terminal 4
+
+```
+cp -R $(rospack find pmb2_description) ~/webpage_ws/unit_10/
+cp -R $(rospack find tiago_description) ~/webpage_ws/unit_10/
+rosbridge_address
+webpage_address
+```
+
+## Unit_11
+
+Terminal 1
+
+```
+cd ~/webpage_ws/unit_11
+python -m SimpleHTTPServer 7000
+```
+
+Terminal 2
+
+```
+roslaunch course_web_dev_ros web.launch
+```
+
+Terminal 3
+
+```
+rosrun course_web_dev_ros turtlebot_2_action_server.py
+```
+
+Terminal 4
+
+```
+rosbridge_address
+webpage_address
+```
+
