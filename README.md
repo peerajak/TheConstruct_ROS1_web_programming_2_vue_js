@@ -198,3 +198,23 @@ rosbridge_address
 webpage_address
 ```
 
+pub to action Server
+
+```
+rostopic pub /turtlebot2_action_service_as/goal course_web_dev_ros/WaypointActionActionGoal "header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+goal_id:
+  stamp:
+    secs: 0
+    nsecs: 0
+  id: ''
+goal:
+  position:
+    x: 3.0
+    y: 3.0
+    z: 0.0"
+```
